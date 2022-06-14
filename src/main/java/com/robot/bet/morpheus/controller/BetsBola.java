@@ -472,8 +472,8 @@ metade_aportado: 1000,00 / 2 = 500,00
     	aposta1.setValorAposta(apostaMenor.setScale(0, RoundingMode.HALF_DOWN));
     	aposta2.setValorAposta(apostaMaior.setScale(0, RoundingMode.HALF_DOWN));
     	if(invertido) {
-        	aposta1.setValorAposta(apostaMaior);
-        	aposta2.setValorAposta(apostaMenor);
+        	aposta1.setValorAposta(apostaMaior.setScale(0, RoundingMode.HALF_DOWN));
+        	aposta2.setValorAposta(apostaMenor.setScale(0, RoundingMode.HALF_DOWN));
     	}
     	
     	return true;
