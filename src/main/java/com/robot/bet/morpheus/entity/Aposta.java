@@ -54,4 +54,15 @@ public class Aposta {
 	@SerializedName("message_error")
 	private String messageError;
 	
+	private BigDecimal valorSaldo;
+
+	@Override
+	public String toString() {
+		return "Aposta [id=" + id + ", idCampeonato=" + idCampeonato + ", campeonato=" + campeonato + ", idPartida="
+				+ idPartida + ", timeCasa=" + timeCasa + ", timeFora=" + timeFora + ", tipo=" + tipo + ", opcao="
+				+ opcao + ", idOpcao=" + idOpcao + ", cotacao=" + cotacao + ", valorAposta=" + valorAposta
+				+ ", dataEvento=" + dataEvento + ", statusAposta=" + statusAposta + ", usuario=" + usuario
+				+ ", messageError=" + messageError + ", valorSaldo=" + valorSaldo + "]";
+	}
+	
 }

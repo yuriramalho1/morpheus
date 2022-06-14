@@ -27,10 +27,8 @@ public class QueueConsumer {
         List<Aposta> apostas = gson.fromJson(fileBody, new TypeToken<List<Aposta>>() {}.getType());
         
         if(apostas!=null && apostas.size()>1) {
-        	apostas.forEach(a->{
-            	BetsBola.runBet(a);
-                //System.out.println("Aposta " + a.getCampeonato() + " " + a.getTimeCasa() + " x " + a.getTimeFora());
-        	});
+        	BetsBola bb = new BetsBola();
+        	bb.runBet(apostas);
             String message = gson.toJson(apostas);
             queueSender.send(message);
         }

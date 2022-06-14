@@ -10,6 +10,7 @@ public enum StatusAposta {
 	SEM_SALDO        ("Sem Saldo"), 
 	FALHOU           ("Falhou"),
 	COTACAO_ALTERADA ("Cotação Alterada"),
+	COTACAO_FALHOU   ("Cotação Falhou"),
 	;
 	
 	@Getter @Setter

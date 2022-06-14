@@ -13,7 +13,7 @@ public class ExecutorBase implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(ExecutorBase.class);
 
     private Boolean debug = true;
-
+    
     @PostConstruct
     public void atStartup() {
         if (debug) {

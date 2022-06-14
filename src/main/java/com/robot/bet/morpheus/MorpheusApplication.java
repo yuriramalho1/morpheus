@@ -20,6 +20,7 @@ public class MorpheusApplication {
 		SpringApplication application = new SpringApplication(MorpheusApplication.class);
 		application.setWebApplicationType(WebApplicationType.NONE);
 		application.run(args);
+		
 	}
 
 }
